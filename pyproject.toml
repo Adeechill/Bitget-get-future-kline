@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitget-fetcher"
+version = "1.0.0"
+authors = [
+  { name="Your Name", email="your_email@example.com" },
+]
+description = "一個用於下載 Bitget 交易所歷史 K 線數據的 Python 套件。"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/Bitget-get-future-kline"
+Issues = "https://github.com/your-username/Bitget-get-future-kline/issues"
+
+[project.scripts]
+bitget-fetcher = "cli:main" 
